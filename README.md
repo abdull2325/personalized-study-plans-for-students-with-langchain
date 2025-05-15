@@ -14,7 +14,7 @@ An intelligent, LLM-powered application that generates highly personalized study
 
 🛠️ Installation
 bash# Clone the repository
-git clone https://github.com/yourusername/enhanced-study-plan-generator.git
+git clone https://github.com/abdull2325/personalized-study-plans-for-students-with-langchain
 cd enhanced-study-plan-generator
 
 # Create and activate virtual environment
