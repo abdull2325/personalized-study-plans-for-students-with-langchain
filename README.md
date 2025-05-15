@@ -1,4 +1,4 @@
-**personalized-study-plans-for-students-with-langchain**
+##personalized-study-plans-for-students-with-langchain*
 </div>
 An intelligent, LLM-powered application that generates highly personalized study plans for students by analyzing their unique academic profile, learning style, and personal circumstances. The tool leverages educational psychology principles and evidence-based learning strategies to create comprehensive, actionable study plans.
 
