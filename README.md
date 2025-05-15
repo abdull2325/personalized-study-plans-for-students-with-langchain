@@ -1,8 +1,6 @@
 </div>
 An intelligent, LLM-powered application that generates highly personalized study plans for students by analyzing their unique academic profile, learning style, and personal circumstances. The tool leverages educational psychology principles and evidence-based learning strategies to create comprehensive, actionable study plans.
-<p align="center">
-  <img src="https://github.com/username/enhanced-study-plan-generator/raw/main/assets/study_plan_example.png" alt="Study Plan Example" width="600">
-</p>
+
 ✨ Features
 
 🧠 Personalized Analysis: Evaluates learning style, strengths, challenges, and goals
