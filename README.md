@@ -122,5 +122,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Show Image
 
 <p align="center">
-  <a href="https://github.com/abdull2325">Created with ❤️ by Your Name</a>
+  <a href="https://github.com/abdull2325">Created with ❤️ by Muhammad Abdullah</a>
 </p>
