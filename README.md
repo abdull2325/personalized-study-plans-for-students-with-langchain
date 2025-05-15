@@ -1,103 +1,113 @@
-# personalized-study-plans-for-students-with-langchain
-Enhanced Personalized Study Plan Generator
-Show Image
-Show Image
-Show Image
-An intelligent, LLM-powered tool that generates comprehensive, personalized study plans by leveraging advanced AI to analyze student profiles and develop custom learning strategies.
-🌟 Features
+</div>
+An intelligent, LLM-powered application that generates highly personalized study plans for students by analyzing their unique academic profile, learning style, and personal circumstances. The tool leverages educational psychology principles and evidence-based learning strategies to create comprehensive, actionable study plans.
+<p align="center">
+  <img src="https://github.com/username/enhanced-study-plan-generator/raw/main/assets/study_plan_example.png" alt="Study Plan Example" width="600">
+</p>
+✨ Features
 
-Highly Personalized Study Plans: Analyzes student profiles comprehensively to create tailored educational strategies
-Expert Educational Consultant: Applies evidence-based learning methodologies from educational psychology
-Detailed Weekly Schedules: Creates hour-by-hour study plans that balance subjects and account for extracurriculars
-Subject-Specific Strategies: Develops customized approaches for each course based on learning style and needs
-Multiple AI Models: Integrates with OpenRouter to access various LLMs including GPT-4, Claude, Gemini, and more
-Progress Monitoring: Includes built-in tracking systems with measurable milestones
-Schedule Visualization: Generates visual representations of weekly study schedules
-Polished Command-Line Interface: Features rich formatting and interactive prompts
+🧠 Personalized Analysis: Evaluates learning style, strengths, challenges, and goals
+📚 Subject-Specific Strategies: Custom approaches for each course based on student needs
+⏰ Intelligent Scheduling: Creates optimal study timetables accounting for energy levels
+📊 Progress Monitoring: Built-in tracking systems with achievable milestones
+🔄 Adaptive Planning: Strategies for exam preparation and challenge mitigation
+📱 Multiple AI Models: Access GPT-4, Claude, Gemini, and more through OpenRouter
+📈 Data Visualization: Generate visual study schedule representations
+💻 Interactive CLI: Rich command-line interface with user-friendly prompts
 
-📋 Prerequisites
+🛠️ Installation
+bash# Clone the repository
+git clone https://github.com/yourusername/enhanced-study-plan-generator.git
+cd enhanced-study-plan-generator
 
-Python 3.8+
-OpenRouter API key (or another compatible API)
+# Create and activate virtual environment
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
 
-🔧 Installation
-
-Clone the repository:
-bashgit clone https://github.com/yourusername/study-plan-generator.git
-cd study-plan-generator
-
-Create a virtual environment and activate it:
-bashpython -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-Install dependencies:
-bashpip install -r requirements.txt
-
-
-📝 Configuration
-You can configure the application using a config.yaml file in the root directory. If not present, a default configuration will be created.
-Example configuration:
+# Install dependencies
+pip install -r requirements.txt
+📋 Requirements
+langchain>=0.1.0
+langchain_openai>=0.0.5
+pyyaml>=6.0
+rich>=13.0.0
+matplotlib>=3.7.0
+numpy>=1.24.0
+⚙️ Configuration
+The application uses a config.yaml file for configuration. If not present, it will be created with default values on first run.
 yamldefault_model: "gpt-4-turbo"
 temperature: 0.7
 output_dir: "study_plans"
 openrouter_api_base: "https://openrouter.ai/api/v1"
 🚀 Usage
-
-Run the application:
+Basic Usage
 bashpython study_plan_generator.py
-
 Follow the interactive prompts to:
 
-Enter or select your OpenRouter API key
-Choose an AI model for generation (e.g., GPT-4, Claude, Gemini)
+Select an AI model
 Set temperature for response creativity
-Enter student profile information or use a sample profile
-Generate the study plan
-Save the plan in your preferred format (txt, md, html)
-Create a visual schedule representation
+Enter student information or use a sample profile
+Generate the personalized study plan
+Save and visualize the plan
 
+Command-line Options
+bash# Use a specific model with custom temperature
+python study_plan_generator.py --model "claude-3-sonnet" --temp 0.8
 
+# Use the sample profile
+python study_plan_generator.py --sample
 
-Command-line Arguments
-The application supports several command-line arguments:
-bashpython study_plan_generator.py --model "gpt-4-turbo" --temp 0.8 --sample
-Available options:
+# Specify API key directly
+python study_plan_generator.py --api-key "your-api-key"
+📊 Example Output
+The generator creates comprehensive study plans with sections including:
 
---model: Specify which AI model to use
---api-key: Provide an API key directly
---sample: Use the sample student profile
---temp: Set the temperature parameter (0.0-1.0)
+Executive Summary
+Student Analysis
+Weekly Master Schedule
+Subject-Specific Action Plans
+Progress Monitoring System
+Exam Success Strategies
+Challenge Mitigation Strategies
+Implementation Guidance
 
-📊 Visualizations
-The application can generate visual representations of study schedules using matplotlib:
-bashpython study_plan_generator.py --sample
-# When prompted, enter 'y' to generate a visualization
-The visualization will be saved in the visualizations directory.
-📁 Output
-Study plans are saved in the configured output directory (default: study_plans/). Files are named using the student's name and a timestamp.
-🧠 Using Custom Student Profiles
-When prompted, you can enter detailed information about a student, including:
+<details>
+<summary>Example Study Plan (Click to expand)</summary>
+# PERSONALIZED STUDY PLAN FOR ALEX JOHNSON
 
-Name and grade level
-Subjects and academic performance
-Learning style preferences
-Extracurricular activities
-Academic goals and challenges
-Available study time
-Upcoming exams
-Preferred learning resources
-Special considerations
+## EXECUTIVE SUMMARY
 
-The more detailed the profile, the more personalized the study plan will be.
-🔄 Integration with OpenRouter
-This application uses OpenRouter to access various language models. The integration provides:
+Alex is an 11th-grade student with strong analytical abilities who faces challenges with physics problem-solving and time management. This plan leverages Alex's visual-spatial learning style and programming strengths while addressing test anxiety and focus difficulties through structured schedules and specialized techniques.
 
-Access to models from different providers (OpenAI, Anthropic, Google, etc.)
-Simplified API interface
-Cost-effective routing to appropriate models
+## WEEKLY MASTER SCHEDULE
 
-📜 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+### Monday
+- 6:00-6:45 AM: Physics concept review using visual simulations
+- 3:30-5:30 PM: Basketball practice
+- 6:30-7:15 PM: Calculus integration practice
+- 7:30-8:15 PM: English Literature reading with annotation
+- 8:30-9:00 PM: Daily review and next-day preparation
+
+### Tuesday
+...
+</details>
+🧠 Student Profile Elements
+For best results, include detailed information in these areas:
+
+Academic Information: Subjects, grades, strengths/weaknesses
+Learning Style: Visual, auditory, kinesthetic preferences
+Schedule & Commitments: Extracurricular activities, jobs
+Goals: Short-term and long-term academic objectives
+Challenges: Learning obstacles, time management issues
+Study Time: Available hours and peak productivity periods
+Exams & Deadlines: Upcoming assessments and due dates
+Resources: Preferred learning tools and resources
+Special Considerations: Learning differences, accommodations
+
+🌐 Supported AI Models
+The application uses OpenRouter to access various language models:
+ProviderModelsBest ForOpenAIGPT-3.5-Turbo, GPT-4-TurboDetailed analysis, reasoningAnthropicClaude-3-Haiku, Claude-3-SonnetThoughtful educational plansGoogleGemini-ProMultilingual content supportMistral AIMistral-Large, Mixtral-8x7bFast generation, efficiencyMetaLlama-2-70b-chatOpen source alternativeMicrosoftPhi-2Lightweight, efficient plans
+📊 Visualization
+The tool can generate visualizations of weekly study schedules using matplotlib:
 🤝 Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -107,5 +117,11 @@ Commit your changes (git commit -m 'Add some amazing feature')
 Push to the branch (git push origin feature/amazing-feature)
 Open a Pull Request
 
-📞 Support
-If you encounter any issues or have questions, please file an issue on the GitHub repository.
+📝 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+⭐ Star History
+Show Image
+
+<p align="center">
+  <a href="https://github.com/abdull2325">Created with ❤️ by Your Name</a>
+</p>
